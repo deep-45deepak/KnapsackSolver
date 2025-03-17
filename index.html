@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knapsack Problem Solver 🧳</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Knapsack Problem Solver 🧳</h1>
+        <form id="knapsackForm">
+            <label for="numObjects">Number of objects: 🛍️</label>
+            <input type="number" id="numObjects" name="numObjects" required><br>
+
+            <label for="capacity">Knapsack capacity: 🎒</label>
+            <input type="number" id="capacity" name="capacity" step="0.01" required><br>
+
+            <div id="profitsWeights">
+                <!-- Profits and weights inputs will be added here dynamically -->
+            </div>
+
+            <button type="button" class="btn" onclick="generateInputs()">Generate Inputs 📥</button>
+            <button type="button" class="btn" onclick="calculateFractionalKnapsack()">Fractional Knapsack 📊</button>
+            <button type="button" class="btn" onclick="calculateDynamicKnapsack()">Dynamic Knapsack 🧮</button>
+        </form>
+
+        <h2 id="result">Result: </h2>
+        <div id="matrix" class="matrix"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
